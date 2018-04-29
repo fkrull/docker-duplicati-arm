@@ -1,4 +1,4 @@
-ARG CHANNEL=beta
+ARG CHANNEL=canary
 ARG ARCH=arm32v7
 
 FROM duplicati/duplicati:${CHANNEL} AS duplicati

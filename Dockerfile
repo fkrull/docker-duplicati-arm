@@ -1,9 +1,9 @@
 ARG CHANNEL=beta
-ARG TINI_ARCH=armhf
 ARG ARCH=arm32v7
 
 FROM duplicati/duplicati:${CHANNEL} AS duplicati
 
+ARG TINI_ARCH=armhf
 RUN curl -L -o /tmp/tini https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-${TINI_ARCH} && \
     chmod 0755 /tmp/tini
 
